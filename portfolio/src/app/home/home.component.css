@@ -1,0 +1,33 @@
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+.row.text {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Roboto Mono';
+}
+
+.row.text p {
+    font-size: 2em;
+}
+
+.row span {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.row button {
+    width: 160px;
+    height: 50px;
+    margin-top: 33px;
+}
+
+.row.text h1 {
+    font-family: 'CarterOne-Regular';
+    font-size: 5em;
+    margin: 10px 20px 0px -5px;
+    height: 45px;
+}

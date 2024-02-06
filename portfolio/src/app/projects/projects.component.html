@@ -1,0 +1,22 @@
+<div class="col-md-12">
+    <mat-chip-listbox [multiple]="true">
+        <ng-container *ngFor="let item of items">
+            <mat-chip-option (click)="toggleChip(item)" [selected]="item.selected">{{item.value}}</mat-chip-option>
+        </ng-container>
+    </mat-chip-listbox>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let project of filteredProjects">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>{{project.title}}</mat-card-title>
+                    <mat-card-subtitle>{{project.description}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../assets/images/{{project.img}}.png" alt="Photo of {{project.title}}">
+                <mat-divider></mat-divider>
+                <mat-card-actions>
+                    <button mat-button>BEZOEK</button>
+                  </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>

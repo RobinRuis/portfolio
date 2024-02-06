@@ -1,0 +1,9 @@
+<div class="topnav" id="myTopnav">
+    <a class="cv" href="#home" (click)="closeMenu()">Download CV</a>
+    <a class="link first" [routerLink]="['']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Home</a>
+    <a class="link" [routerLink]="['projects']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Projecten</a>
+    <a class="link" [routerLink]="['experience']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Ervaring</a>
+    <a href="javascript:void(0);" class="icon" (click)="openMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
