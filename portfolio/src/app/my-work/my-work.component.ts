@@ -7,14 +7,14 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'app-my-work',
   standalone: true,
   imports: [MatChipsModule, CommonModule, MatCardModule, MatDividerModule, MatButtonModule],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css',
+  templateUrl: './my-work.component.html',
+  styleUrl: './my-work.component.css',
   animations: [routeAnimationsState]
 })
-export class ProjectsComponent {
+export class MyWorkComponent {
   @HostBinding('@routeAnimationTrigger') routeAnimation = true;
 
   items = [
@@ -28,8 +28,8 @@ export class ProjectsComponent {
   ];
 
   projects = [
-    { title: 'Deze portfolio website', description: 'description1', img: 'portfolio', techniques: ['Angular', 'TypeScript', 'HTML', 'CSS' ] },
-    { title: 'News On This Date', description: 'description2', img: 'newsOnThisDate', techniques: ['ASP .NET', 'C#'] }
+    { title: 'Deze portfolio website', description: 'description1', img: 'portfolio', techniques: ['Angular', 'TypeScript', 'HTML', 'CSS' ], link: '' },
+    { title: 'News On This Date', description: 'description2', img: 'newsOnThisDate', techniques: ['ASP .NET', 'C#'], link: 'https://newsonthisdateserver.azurewebsites.net/' }
   ];
 
   filteredProjects: any[];
